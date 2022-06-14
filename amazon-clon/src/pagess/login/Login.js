@@ -61,7 +61,7 @@ function Login() {
         <div className="password-box">
           <label htmlFor="">Password</label>
           <input
-            type="text"
+            type="password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
           />
