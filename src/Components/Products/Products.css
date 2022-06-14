@@ -1,0 +1,73 @@
+.Product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 0;
+    max-height: 1000px;
+    min-width: 100px;
+    transition: .3s ease;
+}
+
+.Product:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.509);
+}
+
+.Product .info p {
+    display: flex;
+}
+
+.Product .image {
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Product .image img {
+    max-width: 200px;
+    max-height: 230px;
+    width: 100%;
+    background-size: contain;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 15px;
+} 
+.Product .btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transform: translateX(0%);
+    margin-top: 15px;
+}
+.Product button {
+    width: 100px;
+    padding: 5px;
+    border: none;
+    background: #f0c14b;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 1px;
+}
+.fav-off {
+    color: rgb(242, 165, 165);
+    cursor: pointer;
+    transition: .5s ease;
+    margin-left: 40px;
+}
+.fav-on {
+    color: red;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+
+@media (max-width:500px) {
+    .Product .btn {
+        width: 50%;
+        transform: translateX(50%);
+    }
+}

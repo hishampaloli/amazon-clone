@@ -1,0 +1,24 @@
+.fav {
+    display: flex;
+    width: 100%;
+}
+.con {
+    margin-top: 100px;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.fav-h1 {
+   text-align: center;
+   margin: 10vh 0;
+}
+
+@media (max-width:500px) {
+    .con {
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+}

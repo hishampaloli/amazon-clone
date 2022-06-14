@@ -1,0 +1,55 @@
+.NotifiProducts {
+    width: 150px;
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    background-color: white;
+    margin-top: 10px;
+    z-index: 170px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.575);
+}
+
+.NotifiProducts-img {
+    width: 45px;
+}
+
+.NotifiProducts-info {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.icon {
+    font-size: 10px;
+    color: rgb(228, 138, 138);
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    transition: transform .5s ease;
+}
+
+.icon:hover {
+    color: rgb(224, 65, 65);
+    transform: rotate(90deg);
+    transition: transform .5s ease;
+}
+
+.move {
+    transform: translateX(200%);
+    transition: .3s cubic-bezier(0.68, -.25, 0.265, 0.55);
+    width: 150px;
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    background-color: white;
+    margin-top: 10px;
+    z-index: 170px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.575);
+}
+
+
