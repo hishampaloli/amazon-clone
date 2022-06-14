@@ -1,0 +1,241 @@
+.header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding: 5px 0px;
+    z-index: 50;
+    position: fixed;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+ .left {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    margin-right: 20px;
+}
+ .left img {
+    height: 60px;
+    flex: 0.1;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    border-radius: 1px;
+}
+.left input {
+    border: none;
+    width: 100%;
+    padding: 5px;
+}
+
+
+.ico {
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    background-color: #cd9042;
+   
+}
+
+ .right {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.row {
+   margin-left: 3%;
+   display: flex;
+   flex-direction: column;
+   color: rgb(192, 192, 192);
+   align-items: center;
+   justify-content: center;
+   transition: .5s ease;
+   white-space: nowrap;
+}
+.row-fav a {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(192, 192, 192);
+    align-items: center;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.row-fav a:hover {
+    color: white;
+}
+
+.row-red a {
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+.row-red a:hover {
+    color: rgb(234, 111, 111);
+    transform: scale(1.1);
+}
+
+.row-green a {
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+    display: flex;
+    white-space: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+.row-green a:hover {
+    color: rgb(114, 216, 114);
+    transform: scale(1.1);
+}
+
+.row:hover {
+     color: white;
+ }
+
+ .row a:hover{
+    transform: scale(1.1);
+    transition: .5s ease;
+    color: rgb(197, 255, 191);
+ }
+ 
+
+ .row-cart a{
+    color: rgb(192, 192, 192);
+    margin-left: 15px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    transition: .5s ease;
+}
+
+ .row-cart a:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+.ic {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.small-right {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .left {
+        width: 93%;
+    }
+    .row {
+        border: 1px solid rgba(245, 245, 245, 0.231);
+        flex-direction: row;
+        margin-top: 10px;
+        margin-bottom: ;
+        padding: 5px ;
+        width: 60%;
+        margin-left: 0%;
+        box-shadow: 2px 2px  5px rgba(255, 255, 255, 0.406);
+    }
+    .right {
+        display: none;
+    }
+    .small-right {
+        display: flex;
+        align-items:center;
+        margin-left: auto;
+    }
+
+    .menu-icon {
+        color: white;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .nav {
+        position:fixed;
+        z-index: 15;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.936);
+        width: 250px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+        padding-top: 60px;
+    }
+    .nav a{
+        color: white;
+    }
+
+    .row-fav {
+        border: 1px solid rgba(245, 245, 245, 0.231);
+        width: 60%;
+        margin-top: 10px;
+        box-shadow: 2px 2px  5px rgba(255, 255, 255, 0.406);
+        padding: 5px ;
+    }
+    .row-fav a {
+        flex-direction: row;
+    }
+    .cancel-icon{
+        position: absolute;
+        right: 3%;
+        top: 3%;
+        cursor: pointer;
+    }
+
+    .cancel-icon:hover {
+        color: red;
+        transition: .5s ease;
+        transform: rotate(180deg);
+    }
+    .row-fav a strong{
+        margin-left: 10px;
+    }
+    .row-red a {
+        align-items: flex-start;
+        display: flex;
+        margin-bottom: 17px;
+    }
+    .row-green a {
+        align-items: flex-start;
+        display: flex;
+        margin-bottom: 17px;
+    }
+    .row-cart {
+        width: 60%;
+        border: 1px solid rgba(245, 245, 245, 0.231);
+        margin-top: 10px;
+        box-shadow: 2px 2px  5px rgba(255, 255, 255, 0.406);
+    }
+    .row-cart a{
+        justify-content: center;
+        color: white;
+    }
+    
+
+   
+}
