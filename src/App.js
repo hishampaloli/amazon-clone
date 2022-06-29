@@ -36,14 +36,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+       
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/order" element={<Order />} />
-          <Route path="/fav" element={<Fav />} />
-          <Route path="/seeorder" element={<SeeOrder />} />
+          <Route exact path="/" element={<div><Header /> <Home /></div>} />
+          <Route path="/cart" element={<div> <Header /><Cart /></div>} />
+          <Route path="/login" element={<div><Login /></div>} />
+          <Route path="/order" element={<div><Header /> <Order /></div>} />
+          <Route path="/fav" element={<div> <Header /> <Fav /></div>} />
+          <Route path="/seeorder" element={<div><Header /><SeeOrder /></div>} />
         </Routes>
       </Router>
     </div>

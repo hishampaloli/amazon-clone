@@ -12,7 +12,7 @@ function SeeOrder() {
   };
 
   return (
-    <div className="cont">
+    <div className="cont" style={{marginTop:'100px'}}>
       {seeOrder ? (
         order.map((i) => {
           return (
