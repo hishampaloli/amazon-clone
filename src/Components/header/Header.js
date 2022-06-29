@@ -61,7 +61,7 @@ function Header() {
         <div onClick={handleLogin} className={user ? "row-red" : "row-green"}>
           <Link to={!user && "/login"}>
             <p>Hello {user ? user.email.split("@")[0] : "guest"}</p>
-            <strong>{user ? "Log out" : "Sing In"}</strong>
+            <strong>{user ? "Log out" : "Sign In"}</strong>
           </Link>
         </div>
 
@@ -108,7 +108,7 @@ function Header() {
             >
               <Link to={!user && "/login"}>
                 <p>Hello {user ? user.email.split("@")[0] : "guest"}</p>
-                <strong>{user ? "Log out" : "Sing In"}</strong>
+                <strong>{user ? "Log out" : "Sign In"}</strong>
               </Link>
             </div>
 
